@@ -16,7 +16,7 @@ cd ..
 cd eclipse-workspace/saldoKafka
 ./mvnw package -Dmaven.test.skip=true
 cd target
-cp *.jar ../saldoKafka/app.jar
+cp *.jar ../saldokafka/app.jar
 cd ..
 
 # build de senha
@@ -30,7 +30,7 @@ cd ..
 cd eclipse-workspace/senhaKafka
 ./mvnw package -Dmaven.test.skip=true
 cd target
-scp *.jar ../senhaKafka/app.jar
+scp *.jar ../senhakafka/app.jar
 cd ..
 
 # build de transferencia
@@ -39,3 +39,11 @@ cd /Users/richardmarques/eclipse-workspace/transferencia
 cd target
 cp *.jar ../transferencia/app.jar
 cd ..
+
+kubectl apply -f kafka.yaml
+kubectl apply -f mysql.yaml
+kubectl apply -f contacorrente.yaml
+kubectl apply -f senha.yaml
+kubectl apply -f saldokafka.yaml
+kubectl apply -f senhakafka.yaml
+kubectl apply -f transferencia.yaml
