@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: contacorrente-svc
+  labels:
+    app: contacorrente-svc
+spec:
+  selector:
+    app: contacorrente
+  type: NodePort
+  ports:
+  - port: 9002
+    protocol: TCP
+    targetPort: 9002
+    nodePort: 30002
+    name: porta1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contacorrente
+  labels:
+    app: contacorrente
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: contacorrente
+  template:
+    metadata:
+      labels:
+        app: contacorrente
+    spec:
+      containers:
+      - name: springadmin
+        image: itau/contacorrente:1.0
+        ports:
+        - containerPort: 9002

@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: senhakafka-svc
+  labels:
+    app: senhakafka-svc
+spec:
+  selector:
+    app: senhakafka
+  type: NodePort
+  ports:
+  - port: 9001
+    protocol: TCP
+    targetPort: 9001
+    nodePort: 30001
+    name: porta1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: senhakafka
+  labels:
+    app: senhakafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: senhakafka
+  template:
+    metadata:
+      labels:
+        app: senhakafka
+    spec:
+      containers:
+      - name: springadmin
+        image: itau/senhakafka:1.0
+        ports:
+        - containerPort: 9001

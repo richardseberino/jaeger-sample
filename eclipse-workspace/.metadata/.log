@@ -1,0 +1,88 @@
+!SESSION 2019-09-06 11:33:30.440 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/richardmarques/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/richardmarques/.eclipse_keyring
+
+This is a continuation of log file /Users/richardmarques/eclipse-workspace/.metadata/.bak_0.log
+Created Time: 2019-09-09 15:13:46.728
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.728
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.upxWwLbR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.729
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.731
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.732
+!MESSAGE buffering callback sts4.classpath.upxWwLbR SpringBootAdmin false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.732
+!MESSAGE Preparing classpath changed notification conta-corrente
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.733
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.735
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.736
+!MESSAGE buffering callback sts4.classpath.upxWwLbR conta-corrente false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.736
+!MESSAGE Preparing classpath changed notification saldoKafka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.736
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.738
+!MESSAGE classpath=107 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.740
+!MESSAGE buffering callback sts4.classpath.upxWwLbR saldoKafka false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.740
+!MESSAGE Preparing classpath changed notification senha
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.740
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.743
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.744
+!MESSAGE buffering callback sts4.classpath.upxWwLbR senha false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.745
+!MESSAGE Preparing classpath changed notification senhaKafka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.745
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.748
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.749
+!MESSAGE buffering callback sts4.classpath.upxWwLbR senhaKafka false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.750
+!MESSAGE executing callback sts4.classpath.upxWwLbR 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 15:13:46.805
+!MESSAGE executing callback sts4.classpath.upxWwLbR SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 17:44:21.709
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.upxWwLbR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 17:44:21.711
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.upxWwLbR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 17:44:21.712
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 17:44:21.712
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.upxWwLbR => OK

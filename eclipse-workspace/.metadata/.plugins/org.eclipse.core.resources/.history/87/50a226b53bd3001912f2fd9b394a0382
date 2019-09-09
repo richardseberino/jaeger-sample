@@ -1,0 +1,39 @@
+server:
+  port: 9001
+spring:
+  boot:
+    admin:
+      client:
+        url: http://springadmin-svc:8081
+        instance:
+          name: Senha-Kafka-Listener
+          health-url: http://ingresshost:30001/actuator/health
+          management-base-url: http://ingresshost:30001/actuator
+          service-url: http://ingresshost:30001
+  kafka:
+    consumer:
+      bootstrap-servers: 
+      - kafka-svc:9092
+      group-id: senha-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: 
+      - kafka-svc:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer  
+    bootstrap-servers:
+    - kafka-svc:9092         
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+info:
+  app: 
+    name: Senha-Kafka-listener
+    version: 0.1.0a

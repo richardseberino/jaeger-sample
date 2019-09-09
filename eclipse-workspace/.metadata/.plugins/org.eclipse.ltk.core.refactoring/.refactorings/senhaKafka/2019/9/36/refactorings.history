@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;senhaKafka/src/main/resources/application.yaml&apos; to &apos;application.properties&apos;" description="Rename resource &apos;application.yaml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/application.yaml" name="application.properties" stamp="1567802193409" updateReferences="true"/>
+</session>

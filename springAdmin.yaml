@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springadmin-svc
+  labels:
+    app: springadmin-svc
+spec:
+  selector:
+    app: springadmin
+  type: NodePort
+  ports:
+  - port: 8081
+    protocol: TCP
+    targetPort: 8081
+    nodePort: 30081
+    name: porta1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springadmin
+  labels:
+    app: springadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springadmin
+  template:
+    metadata:
+      labels:
+        app: springadmin
+    spec:
+      containers:
+      - name: springadmin
+        image: itau/springadmin:1.0
+        ports:
+        - containerPort: 8081

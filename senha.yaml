@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: senha-svc
+  labels:
+    app: senha-svc
+spec:
+  selector:
+    app: senha
+  type: NodePort
+  ports:
+  - port: 9004
+    protocol: TCP
+    targetPort: 9004
+    nodePort: 30004
+    name: porta1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: senha
+  labels:
+    app: senha
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: senha
+  template:
+    metadata:
+      labels:
+        app: senha
+    spec:
+      containers:
+      - name: springadmin
+        image: itau/senha:1.0
+        ports:
+        - containerPort: 9004

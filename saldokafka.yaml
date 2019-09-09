@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: saldokafka-svc
+  labels:
+    app: saldokafka-svc
+spec:
+  selector:
+    app: saldokafka
+  type: NodePort
+  ports:
+  - port: 9006
+    protocol: TCP
+    targetPort: 9006
+    nodePort: 30006
+    name: porta1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saldokafka
+  labels:
+    app: saldokafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: saldokafka
+  template:
+    metadata:
+      labels:
+        app: saldokafka
+    spec:
+      containers:
+      - name: springadmin
+        image: itau/saldokafka:1.0
+        ports:
+        - containerPort: 9006

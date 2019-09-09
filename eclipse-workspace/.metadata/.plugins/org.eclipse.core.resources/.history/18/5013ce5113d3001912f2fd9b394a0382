@@ -1,0 +1,17 @@
+server.port=9001
+spring.kafka.consumer.bootstrap-servers=kafka-svc:9092
+spring.kafka.consumer.group-id=senha-groupid
+spring.kafka.consumer.auto-offset-reset=earliest
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.producer.bootstrap-servers=kafka-svc:9092
+spring.boot.admin.client.instance.name=Senha-Kafka-Listener
+spring.boot.admin.client.url=http://springadmin-svc:8081
+spring.boot.admin.client.instance.health-url=http://172.16.31.132:30001/actuator/health
+spring.boot.admin.client.instance.management-base-url=http://172.16.31.132:30001/actuator
+spring.boot.admin.client.instance.service-url=http://172.16.31.132:30001
+
+management.endpoint.health.show-details=always
+management.endpoints.web.exposure.include="*
+info.app.name="@project.name@"
+info.app.version="@project.version@"
