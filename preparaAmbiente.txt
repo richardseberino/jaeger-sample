@@ -25,7 +25,7 @@ insert into conta_corrente (agencia,conta,bloqueada, saldo, titular) values ( 10
 
 insert into senha  select id_conta, '123456' from conta_corrente;
 
-exit;
+exit; 
 exit
 
 kubectl get pods | grep kafka | awk '{ print "kubectl exec -ti " $1 " bash " } '
