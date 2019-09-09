@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "8d790489-fdf0-47ff-8051-f3435c3a1ce5",
+		"name": "Teste ISTIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Valida Senha",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"senha\": \"12346\",\n\t\"contaID\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:30004/senha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30004",
+					"path": [
+						"senha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TEF - tranfere",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"agenciaOrigem\": 10,\n\t\"contaOrigem\": 10,\n\t\"agenciaDestino\": 10,\n\t\"contaDestino\": 11,\n\t\"valor\": 100,\n\t\"senha\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:30010/tef/simula",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30010",
+					"path": [
+						"tef",
+						"simula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIstar contas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30002/contas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30002",
+					"path": [
+						"contas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
