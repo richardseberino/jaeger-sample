@@ -1,0 +1,31 @@
+kubectl apply -f kafka.yaml
+kubectl apply -f mysql.yaml
+
+kubectl get pods | grep mysql | awk '{ print "kubectl exec -ti " $1 " bash " } '
+
+#Cria o banco de dados
+mysql -uroot -p160493
+create database contas;
+exit;
+exit
+
+# reinicia pods conta-corrente e senha para criar as tabelas
+kubectl get pods | grep conta | awk '{ print "kubectl delete pod " $1 } ' | bash
+kubectl get pods | grep senha | awk '{ print "kubectl delete pod " $1 } ' | bash
+
+kubectl get pods | grep mysql | awk '{ print "kubectl exec -ti " $1 " bash " } '
+
+#Cria os registros de testes
+mysql -uroot -p160493
+use contas;
+insert into conta_corrente (agencia,conta,bloqueada, saldo, titular) values ( 10,10,false, 100000, 'Richard Marques');
+insert into conta_corrente (agencia,conta,bloqueada, saldo, titular) values ( 10,11,false, 200000, 'Rafael Camilo');
+insert into conta_corrente (agencia,conta,bloqueada, saldo, titular) values ( 10,12,false, 500000, 'Jean Anami');
+insert into conta_corrente (agencia,conta,bloqueada, saldo, titular) values ( 10,13,false, 100000, 'Marcelo Dias');
+
+insert into senha  select id_conta, '123456' from conta_corrente;
+
+exit;
+exit
+
+kubectl get pods | grep kafka | awk '{ print "kubectl exec -ti " $1 " bash " } '

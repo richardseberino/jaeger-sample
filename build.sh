@@ -65,8 +65,7 @@ cd transferencia
 cd ../
 
 
-kubectl apply -f kafka.yaml
-kubectl apply -f mysql.yaml
+
 kubectl apply -f contacorrente.yaml
 kubectl apply -f senha.yaml
 kubectl apply -f saldokafka.yaml
