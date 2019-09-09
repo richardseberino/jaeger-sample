@@ -85,6 +85,6 @@ spec:
         - name: ZOOKEEPER_IP
           value: "zookeeper-svc"
         - name: KAFKA_AUTO_CREATE_TOPICS_ENABLE
-          value: true  
+          value: "true"
         #command: ["sh"]
         #args: ["-c", "unset JMX_PORT;/kafka/bin/kafka-topics.sh --create --zookeeper zookeeper-svc:2181 --replication-factor 1 --partitions 1 --topic simulacao"]
