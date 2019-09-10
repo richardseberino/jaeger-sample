@@ -1,5 +1,6 @@
 package br.com.itau.modernizacao.kafka.saldo;
 
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -25,6 +26,7 @@ public class SaldoService {
 	{
 		try
 		{
+		
 			String[] msg = mensagem.split(";");
 			int agenciaOrigem = Integer.parseInt(msg[0]);
 			int contaOrigem = Integer.parseInt(msg[1]);

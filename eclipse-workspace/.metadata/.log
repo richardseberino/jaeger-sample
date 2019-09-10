@@ -86,3 +86,197 @@ Created Time: 2019-09-09 15:13:46.728
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 17:44:21.712
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.upxWwLbR => OK
+!SESSION 2019-09-09 21:25:05.372 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/richardmarques/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/richardmarques/.eclipse_keyring
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-09 21:25:33.525
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-09 21:25:34.384
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-09 21:25:34.385
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@466bf366,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28be7db5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:40.871
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:40.873
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1fae279e[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=994)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:40.875
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:40.936
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.158
+!MESSAGE Boot LS startup time from start to initialized: 2259ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.186
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FPFBWFRIisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.187
+!MESSAGE subscribing to classpath changes: sts4.classpath.FPFBWFRI isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.189
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.191
+!MESSAGE subsribers = {sts4.classpath.FPFBWFRI=Send Classpath Notifications(114)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.191
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.198
+!MESSAGE project saldoKafka ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.199
+!MESSAGE project conta-corrente ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.199
+!MESSAGE Preparing classpath changed notification saldoKafka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.199
+!MESSAGE project senha ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.200
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.200
+!MESSAGE project senhaKafka ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.200
+!MESSAGE project transferencia ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.201
+!MESSAGE project Kafka-Sample ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.201
+!MESSAGE project Kafka-Sample SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.202
+!MESSAGE project Liberty Runtime ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.202
+!MESSAGE project Liberty Runtime SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.203
+!MESSAGE project SpringBootAdmin ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.203
+!MESSAGE project forum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.203
+!MESSAGE project forum SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.204
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.205
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FPFBWFRI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.206
+!MESSAGE classpath=107 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.209
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI saldoKafka false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.210
+!MESSAGE Preparing classpath changed notification conta-corrente
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.210
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.214
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.216
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI conta-corrente false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.218
+!MESSAGE Preparing classpath changed notification senha
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.218
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.221
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.223
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI senha false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.224
+!MESSAGE Preparing classpath changed notification senhaKafka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.224
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.227
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.229
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI senhaKafka false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.229
+!MESSAGE Preparing classpath changed notification transferencia
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.229
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.262
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.263
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI transferencia false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.264
+!MESSAGE Preparing classpath changed notification SpringBootAdmin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.264
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.266
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.268
+!MESSAGE buffering callback sts4.classpath.FPFBWFRI SpringBootAdmin false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.268
+!MESSAGE executing callback sts4.classpath.FPFBWFRI 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-09 21:25:43.310
+!MESSAGE executing callback sts4.classpath.FPFBWFRI SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-09-09 21:26:56.841
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:347)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)

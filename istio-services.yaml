@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kiali-svc
+  namespace: istio-system
+  labels:
+    app: kiali-svc
+spec:
+  selector:
+    app: kiali
+  type: NodePort
+  ports:
+  - port: 20001
+    protocol: TCP
+    targetPort: 20001
+    nodePort: 32001
+    name: porta1
+## https://localhost:32001/kiali/console/
+## admin / admin
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-svc
+  namespace: istio-system
+  labels:
+    app: prometheus-svc
+spec:
+  selector:
+    app: prometheus
+  type: NodePort
+  ports:
+  - port: 9090
+    protocol: TCP
+    targetPort: 9090
+    nodePort: 30090
+    name: porta1
+## https://localhost:30090
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jaeger-query-svc
+  namespace: istio-system
+  labels:
+    app: jaeger-query-svc
+spec:
+  selector:
+    app: jaeger-query
+  type: NodePort
+  ports:
+  - port: 16686
+    protocol: TCP
+    targetPort: 16686
+    nodePort: 30086
+    name: porta1
+## https://localhost:30086
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana-svc
+  namespace: istio-system
+  labels:
+    app: grafana-svc
+spec:
+  selector:
+    app: grafana
+  type: NodePort
+  ports:
+  - port: 3000
+    protocol: TCP
+    targetPort: 3000
+    nodePort: 31000
+    name: porta1
+## https://localhost:31000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zipkin-svc
+  namespace: istio-system
+  labels:
+    app: zipkin-svc
+spec:
+  selector:
+    app: zipkin
+  type: NodePort
+  ports:
+  - port: 9411
+    protocol: TCP
+    targetPort: 9411
+    nodePort: 31411
+    name: porta1
+## https://localhost:31000

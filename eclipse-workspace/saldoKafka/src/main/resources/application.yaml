@@ -10,6 +10,7 @@ spring:
           health-url: http://ingresshost:30006/actuator/health
           management-base-url: http://ingresshost:30006/
           service-url: http://ingresshost:30006 
+
   kafka:
     consumer:
       bootstrap-servers: 

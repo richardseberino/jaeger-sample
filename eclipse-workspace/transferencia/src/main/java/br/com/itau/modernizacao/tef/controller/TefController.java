@@ -49,8 +49,8 @@ public class TefController {
 
 			}
 			catch (Exception e)
-			{
-				System.err.println("Conta Origem nao existe!");
+			{ 
+				System.err.println("Conta Origem nao existe! agencia: " + transferencia.getAgenciaOrigem() + " conta: " + transferencia.getContaOrigem());
 				return ResponseEntity.notFound().build();
 			}
 			try
@@ -60,7 +60,7 @@ public class TefController {
 			}
 			catch (Exception e)
 			{
-				System.err.println("Conta Destino nao existe!");
+				System.err.println("Conta Destino nao existe! agencia: " + transferencia.getAgenciaDestino() + " conta: " + transferencia.getContaDestino());
 				return ResponseEntity.notFound().build();
 			}
 			
@@ -83,8 +83,9 @@ public class TefController {
 			while (this.aguardaSenha)
 			{
 				java.util.Date agora = new java.util.Date();
-				if (agora.getTime() - hoje.getTime() > 10000 && this.aguardaSenha)
+				if (agora.getTime() - hoje.getTime() > 20000 && this.aguardaSenha)
 				{
+					
 					System.err.println("Timeout aguardando validação da senha! " + this.aguardaSenha);
 					return ResponseEntity.status(HttpStatus.GATEWAY_TIMEOUT).build();
 				}
@@ -96,7 +97,7 @@ public class TefController {
 			while (this.aguardaSaldo)
 			{
 				java.util.Date agora = new java.util.Date();
-				if (agora.getTime() - hoje.getTime() > 10000 && this.aguardaSaldo)
+				if (agora.getTime() - hoje.getTime() > 20000 && this.aguardaSaldo)
 				{
 					System.err.println("Timeout aguardando resultado do Saldo! " + this.aguardaSaldo);
 					return ResponseEntity.status(HttpStatus.GATEWAY_TIMEOUT).build();
@@ -148,14 +149,14 @@ public class TefController {
 	@KafkaListener(topics="senha", groupId = "tef-groupid")
 	public void senha(String mensagem)
 	{
-		//System.out.println("Resposta senha " + mensagem);
+		System.out.println("Resposta senha " + mensagem);
 		this.respostaSenha = new Boolean(mensagem);
 		this.aguardaSenha=false;
 	}
 	@KafkaListener(topics="saldo", groupId = "tef-groupid")
 	public void saldo(String mensagem)
 	{
-		//System.out.println("Resposta saldo " + mensagem);
+		System.out.println("Resposta saldo " + mensagem);
 		this.respostaSaldo = new Boolean(mensagem);
 		this.aguardaSaldo=false;
 	}
