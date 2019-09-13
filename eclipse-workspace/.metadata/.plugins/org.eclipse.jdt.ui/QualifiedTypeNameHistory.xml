@@ -54,6 +54,6 @@
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 <fullyQualifiedTypeName name="io.micrometer.core.annotation.Timed"/>
 <fullyQualifiedTypeName name="br.com.itau.modernizacao.tef.controller.dto.ContaCorrente"/>
-<fullyQualifiedTypeName name="org.apache.kafka.clients.consumer.ConsumerConfig"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.consumer.ConsumerConfig"/>
 </qualifiedTypeNameHistroy>
