@@ -4,7 +4,7 @@ spring:
   kafka:
     consumer:
       bootstrap-servers: kafka-svc:9092
-      group-id: group-id
+      group-id: tef-groupid
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -20,9 +20,12 @@ spring:
         url: http://springadmin-svc:8081
         instance:
           name: Transferencia-Rest
-          health-url: http://ingresshost:30010/actuator/health
-          management-base-url: http://ingresshost:30010/
-          service-url: http://ingresshost:30010 
+          health-url: http://ingresshost:9000/actuator/health
+          management-base-url: http://ingresshost:9000/
+          service-url: http://ingresshost:9000 
+  #        health-url: http://ingresshost:30010/actuator/health
+ #         management-base-url: http://ingresshost:30010/
+#          service-url: http://ingresshost:30010 
 management:
   endpoint:
     health:
@@ -35,4 +38,12 @@ info:
   app: 
     name: "@project.name@"
     version: "@project.version@"
-      
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831
+#JAEGER_SERVICE_NAME: spring-tranferencia
+#JAEGER_ENDPOINT: http://localhost:14268/api/traces
+#JAEGER_SAMPLER_TYPE: probabilistic
+#JAEGER_SAMPLER_PARAM: 0.1

@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: mysql
+        image: itau/mysql-tef:1.0
         ports:
         - containerPort: 3306
         env:

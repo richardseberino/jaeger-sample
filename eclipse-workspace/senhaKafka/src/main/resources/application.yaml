@@ -7,14 +7,17 @@ spring:
         url: http://springadmin-svc:8081
         instance:
           name: Senha-Kafka-Listener
-          health-url: http://ingresshost:30001/actuator/health
-          management-base-url: http://ingresshost:30001/
-          service-url: http://ingresshost:30001
+          health-url: http://ingresshost:9001/actuator/health
+          management-base-url: http://ingresshost:9001/
+          service-url: http://ingresshost:9001
+#          health-url: http://ingresshost:30001/actuator/health
+#          management-base-url: http://ingresshost:30001/
+#          service-url: http://ingresshost:30001
   kafka:
     consumer:
       bootstrap-servers: 
       - kafka-svc:9092
-      group-id: senha-id
+      group-id: senha-groupid
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -37,3 +40,8 @@ info:
   app: 
     name: Senha-Kafka-listener
     version: 0.1.0a
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831

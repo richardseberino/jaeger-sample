@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="parent"/>
+		<item key="selection" value="kafka"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="parent"/>
 			<item value="kafka"/>
+			<item value="prepara"/>
+			<item value="prepare"/>
+			<item value="autowi"/>
+			<item value="tracer"/>
+			<item value="opentr"/>
+			<item value="openstrac"/>
+			<item value="Scope"/>
+			<item value="kafka:9092"/>
+			<item value="parent"/>
 			<item value="package"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="813"/>
-		<item key="DIALOG_Y_ORIGIN" value="288"/>
+		<item key="DIALOG_X_ORIGIN" value="1012"/>
+		<item key="DIALOG_Y_ORIGIN" value="249"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

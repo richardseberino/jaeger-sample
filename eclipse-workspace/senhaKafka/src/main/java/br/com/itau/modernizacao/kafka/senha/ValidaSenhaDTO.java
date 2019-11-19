@@ -1,7 +1,6 @@
 package br.com.itau.modernizacao.kafka.senha;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+
 
 public class ValidaSenhaDTO {
 

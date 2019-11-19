@@ -52,6 +52,9 @@ public class ContaCorrente {
 		this.bloqueada = bloqueada;
 	}
     
-    
+    @Override
+    public String toString() {
+    	return "Agencia:  " + this.agencia +", conta: " +  this.conta + ", titular: " + this.titular + ", saldo: " + this.saldo;
+    }
 	
 }

@@ -18,16 +18,16 @@
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/TopicoController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/src/main/java/br/com/itau/modernizacao/senha/SenhaController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/src/main/java/br/com/itau/modernizacao/cc/controller/ContaController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senhaKafka/src/main/java/br/com/itau/modernizacao/kafka/senha/SenhaService.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/saldoKafka/src/main/resources/application.yaml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/saldoKafka/src/main/java/br/com/itau/modernizacao/kafka/saldo/SaldoService.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/TopicoController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/src/main/java/br/com/itau/modernizacao/senha/SenhaController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/src/main/java/br/com/itau/modernizacao/cc/controller/ContaController.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senhaKafka/src/main/java/br/com/itau/modernizacao/kafka/senha/SenhaService.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/saldoKafka/src/main/java/br/com/itau/modernizacao/kafka/saldo/SaldoService.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SpringBootAdmin/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/conta-corrente/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/saldoKafka/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senha/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senhaKafka/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/transferencia/pom.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/saldoKafka/src/main/resources/application.yaml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/senhaKafka/src/main/resources/application.yaml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
 		<item key="ShowDerived" value="false"/>
 		<item key="FilterByLocation" value="false"/>
 		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
 		<section name="DialogBoundsSettings">
-			<item key="DIALOG_HEIGHT" value="500"/>
-			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_HEIGHT" value="431"/>
+			<item key="DIALOG_WIDTH" value="484"/>
 			<item key="DIALOG_X_ORIGIN" value="26"/>
 			<item key="DIALOG_Y_ORIGIN" value="23"/>
-			<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 		</section>
 	</section>
 </section>

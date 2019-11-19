@@ -35,7 +35,7 @@
 	&quot;agenciaOrigem&quot;: 10,&#xd;
 	&quot;contaOrigem&quot;: 11,&#xd;
 	&quot;agenciaDestino&quot;: 10,&#xd;
-	&quot;contaDestino&quot;: 11,&#xd;
+	&quot;contaDestino&quot;: 12,&#xd;
 	&quot;valor&quot;: 1000,&#xd;
 	&quot;senha&quot;: &quot;123456&quot;&#xd;
 }</stringProp>
@@ -44,7 +44,7 @@
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
-          <stringProp name="HTTPSampler.port">30010</stringProp>
+          <stringProp name="HTTPSampler.port">9000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">tef/simula</stringProp>

@@ -24,4 +24,10 @@ public class SenhaValidacaoDto {
 		this.contaID = contaID;
 	}
 	
+	@Override
+	public String toString() {
+
+		return "id conta: " + this.contaID + ", senha: " + this.senha;
+	}
+	
 }

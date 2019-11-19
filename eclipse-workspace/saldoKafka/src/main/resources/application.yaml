@@ -7,15 +7,18 @@ spring:
         url: http://springadmin-svc:8081
         instance:
           name: Saldo-Kafka-Listener
-          health-url: http://ingresshost:30006/actuator/health
-          management-base-url: http://ingresshost:30006/
-          service-url: http://ingresshost:30006 
+          health-url: http://ingresshost:9006/actuator/health
+          management-base-url: http://ingresshost:9006/
+          service-url: http://ingresshost:9006 
+  #        health-url: http://ingresshost:30006/actuator/health
+ #         management-base-url: http://ingresshost:30006/
+#          service-url: http://ingresshost:30006 
 
   kafka:
     consumer:
       bootstrap-servers: 
       - kafka-svc:9092
-      group-id: saldo-id
+      group-id: saldo-groupid
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -37,4 +40,9 @@ management:
 info:
   app: 
     name: Saldo-Kafka-listener
-    version: 0.1.0a
+    version: 0.1.0a 
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831
